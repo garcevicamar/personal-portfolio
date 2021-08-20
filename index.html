@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Amar Garčević</title>
+    <meta name="title" content="Amar Garčević">
+    <meta name="description" content="My name is Amar Garčević. I am Web Developer / Designer based in Sarajevo. Web Design / SEO Optimization / Web Hosting services / Domain hosting ">
+    <meta name="keywords" content="Amar, Amar Garčević, Web Design, Web, SEO, SEO optimization, web hosting, domain hosting, hosting">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="language" content="English">
+    <meta name="author" content="Amar Garčević">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,600,600i,700,700i" rel="stylesheet">
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <header id="header">
+        <div class="container-fluid">
+            <div class="logo float-left">
+                <a href="index.html"><img src="assets/img/logow.png" alt="" class="img-fluid"></a>
+            </div>
+            <div class="contact-link float-right">
+                <a href="#kontakt" class="scrollto">KONTAKT</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="hero">
+        <div class="hero-container">
+            <h1>Amar Garčević</h1>
+            <h2>Sajt je u izradi! Hvala na posjeti!</h2>
+            <div class="countdown" data-count="2021/08/31" data-template="%w sedmice %d dan/dana <br> %H:%M:%S"></div>
+
+            <p class="text-white">Primajte redovno obavijesti od mene!</p>
+            <form action="forms/notify.php" method="post" role="form" class="php-email-form">
+                <div class="row no-gutters">
+                    <div class="col-md-6 form-group pr-md-1">
+                        <input type="text" name="name-notify" class="form-control" id="name" placeholder="Vaše ime" data-rule="minlen:3" data-msg="Molim Vas da unesete najmanje 3 karaktera." />
+                        <div class="validate"></div>
+                    </div>
+                    <div class="col-md-6 form-group pl-md-1">
+                        <input type="email" class="form-control" name="email-notify" id="email" placeholder="Vaš e-mail" data-rule="email" data-msg="Molim Vas da unesete važeću e-mail adresu!" />
+                        <div class="validate"></div>
+                    </div>
+                </div>
+                <div class="mb-1">
+                    <div class="loading">Učitavanje....</div>
+                    <div class="error-message"></div>
+                    <div class="sent-message">Vaš zahtjev za primanje notifikacija je poslan! Hvala Vam!</div>
+                </div>
+                <div class="text-center"><button type="submit">Pošalji</button></div>
+            </form>
+        </div>
+    </section>
+
+    <main id="main">
+        <section id="kontakt" class="contact">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Kontakt</h2>
+                </div>
+                <div class="row contact-info mx-auto">
+                    <div class="col-md-4 mx-auto">
+                        <div class="contact-address">
+                            <i class="icofont-google-map"></i>
+                            <h3>Lokacija</h3>
+                            <address>Sarajevo, Bosna i Hercegovina</address>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mx-auto">
+                        <div class="contact-email">
+                            <i class="icofont-envelope"></i>
+                            <h3>Email</h3>
+                            <p><a href="mailto:web@amargarcevic.com">web@amargarcevic.com</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form">
+                    <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                        <div class="form-group">
+                            <input type="text" name="name" class="form-control" id="name" placeholder="Vaše ime" data-rule="minlen:3" data-msg="Molim Vas da unesete najmanje tri karaktera." />
+                            <div class="validate"></div>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" name="email" id="email" placeholder="Vaš e-mail" data-rule="email" data-msg="Molim Vas da unesete važeću e-mail adresu. Npr: primjer@amargarcevic.com" />
+                            <div class="validate"></div>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" name="subject" id="subject" placeholder="Predmet" data-rule="minlen:2" data-msg="Molim Vas da unesete predmet ove poruke!" />
+                            <div class="validate"></div>
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Molim Vas da unesete poruku!" placeholder="Poruka"></textarea>
+                            <div class="validate"></div>
+                        </div>
+                        <div class="mb-3">
+                            <div class="loading">Učitavanje...</div>
+                            <div class="error-message"></div>
+                            <div class="sent-message">Vaša poruka je poslana. Hvala Vam!</div>
+                        </div>
+                        <div class="text-center"><button type="submit">Pošalji</button></div>
+                    </form>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer id="footer">
+        <div class="container">
+            <div class="copyright">
+                &copy; 2021 <strong><span>Amar Garčević</span></strong>. Sva prava pridržana.
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/vendor/jquery/jquery.min.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/vendor/jquery-countdown/jquery.countdown.min.js"></script>
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
